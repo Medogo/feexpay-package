@@ -1,19 +1,20 @@
-from feexpay import PaymentRequest, send_payment_request
+from feexpay import MobilePaymentRequest, CardPaymentRequest, send_payment_request, detect_network
 
-# Créez un objet PaymentRequest avec les données de la requête
-payment_data = PaymentRequest(
-    phoneNumber="22962037761",
-    amount=100,
-    firstName="John",
-    lastName="Doe",
+# Exemple de données pour un paiement mobile
+mobile_payment_data = MobilePaymentRequest(
+    phoneNumber="+22962213185",
+    amount=10000,
+    firstName="test",
+    lastName="test",
     shop="65a15914f7c3688685a04ad2",
-    description="FeexPay"
+    description="Paiement pour service"
 )
 
-# Utilisez votre clé API FeexPay
 api_key = "fp_iVqQPZl4ZRL7Exlg3455zf2YoyD255T8wW3mswcyb4I7OpmWbzwwfaxlRc5HUZM2"
-# Envoyez la requête de paiement
-response = send_payment_request(payment_data, api_key)
+payment_type = "mobile"
 
-# Vérifiez la réponse
-print(response.status_code, response.json())
+# Envoyer la requête de paiement
+response = send_payment_request(mobile_payment_data, api_key, payment_type)
+print(response.json())  # Affiche la réponse de l'API
+
+
