@@ -8,8 +8,8 @@ setup(
         "pydantic",
         "requests",
     ],
-    description="Package pour l'agrégation de paiements via MTN MOBILE MONEY",
-    author="Votre Nom",
-    author_email="votre.email@example.com",
-    url="https://github.com/votrecompte/payment_aggregator",
+    description="Package pour l'agrégation de paiements  MOBILE MONEY ET card",
+    author="Dominique Megnidro",
+    author_email="dmegnidro@gmail.com",
+    url="https://github.com/Medogo/feexpay-package.git",
 )
