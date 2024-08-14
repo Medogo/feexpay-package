@@ -2,15 +2,15 @@ from feexpay import MobilePaymentRequest, CardPaymentRequest, send_payment_reque
 
 # Exemple de données pour un paiement mobile
 mobile_payment_data = MobilePaymentRequest(
-    phoneNumber="+22962213185",
+    phoneNumber="numero de telephone",
     amount=10000,
     firstName="test",
     lastName="test",
-    shop="65a15914f7c3688685a04ad2",
+    shop="id de la boutique",
     description="Paiement pour service"
 )
 
-api_key = "fp_iVqQPZl4ZRL7Exlg3455zf2YoyD255T8wW3mswcyb4I7OpmWbzwwfaxlRc5HUZM2"
+api_key = "votre clé d'API"
 payment_type = "mobile"
 
 # Envoyer la requête de paiement
