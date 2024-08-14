@@ -1,15 +1,21 @@
 from setuptools import setup, find_packages
 
 setup(
-    name="payment_aggregator",
+    name="feexpay",
     version="0.1.0",
+    description="A Python package for handling mobile and card payments via the FeexPay API",
+    author="Dominique Megnidro",
+    author_email="votre.email@example.com",
+    url="https://github.com/Medogo/feexpay-package.git",
     packages=find_packages(),
     install_requires=[
-        "pydantic",
         "requests",
+        "pydantic"
     ],
-    description="Package pour l'agrégation de paiements  MOBILE MONEY ET card",
-    author="Dominique Megnidro",
-    author_email="dmegnidro@gmail.com",
-    url="https://github.com/Medogo/feexpay-package.git",
+    classifiers=[
+        "Programming Language :: Python :: 3",
+        "License :: OSI Approved :: MIT License",
+        "Operating System :: OS Independent",
+    ],
+    python_requires='>=3.6',
 )
