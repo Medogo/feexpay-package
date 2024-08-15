@@ -4,8 +4,8 @@ setup(
     name="feexpay",
     version="0.1.0",
     description="A Python package for handling mobile and card payments via the FeexPay API",
-    author="Dominique Megnidro",
-    author_email="votre.email@example.com",
+    author="feexpay team",
+    author_email="contact@feexpay.me",
     url="https://github.com/Medogo/feexpay-package.git",
     packages=find_packages(),
     install_requires=[
