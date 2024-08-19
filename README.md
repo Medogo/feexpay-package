@@ -16,7 +16,9 @@ Installation
 
 To install the package, use pip:
 
-pip install feexpay
+ git clone https://github.com/Medogo/feexpay-package.git
+
+ pip install -e .
 
 Usage
 
